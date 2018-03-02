@@ -1,0 +1,43 @@
+\usepackage[utf8]{inputenc}
+%for general information about packages check ctan.org
+\usepackage{titlesec}
+%\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\setlength\parindent{0pt}% for no indentation
+
+% Making it a regular A4 page
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+% Equations, Figures, Tables and Floats
+\usepackage{amsmath} % for equations
+\usepackage{graphicx} % for images and such
+\graphicspath{ {images/} } %path for images, in the images folder
+\usepackage{float} % for figures in a container which cannot be broken between pages 
+\usepackage{color} % for colors duh
+
+
+%\usepackage{tikz} % for diagrams probably too much tho for most
+%\usepackage{multirow} % have more than one row in a cell
+%\usepackage{booktabs} % for tables
+
+% References/Usability
+\usepackage{natbib} % Harvard
+\usepackage[breaklinks]{hyperref} % links
+\hypersetup{
+    colorlinks=true,
+    linktocpage=true,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=black, %For the in-text referencing
+    linkcolor=black, % internal links such as ToC and references between figures/equations and etc
+    pdftitle = paper Title,
+    pdfauthor = https://discord.gg/IBO ,
+}
+\usepackage{appendix} % additional features for appendix, such as \addappheadtotoc
+
+
